@@ -1,24 +1,25 @@
-name: gps_tracking_app
-description: A new Flutter project for GPS tracking
+  name: gps_tracking_app
+  description: A new Flutter project for GPS tracking
 
-publish_to: 'none' # Remove this line if you are publishing the app
+  publish_to: 'none' # Remove this line if you are publishing the app
 
-version: 1.0.0+1
+  version: 1.0.0+1
 
-environment:
-  sdk: ">=2.18.0 <3.0.0"
+  environment:
+    sdk: ">=2.18.0 <3.0.0"
 
-dependencies:
+  dependencies:
+    flutter:
+      sdk: flutter
+    # Add the necessary dependencies for your app
+    location: ^7.0.1        # For accessing GPS location
+    permission_handler: ^10.0.0 # For handling permissions
+    http: ^1.1.0
+
+  dev_dependencies:
+    flutter_test:
+      sdk: flutter
+    flutter_lints: ^2.0.0  # Added flutter_lints here
+
   flutter:
-    sdk: flutter
-  # Add the necessary dependencies for your app
-  location: ^7.0.1        # For accessing GPS location
-  permission_handler: ^10.0.0 # For handling permissions
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^2.0.0  # Added flutter_lints here
-
-flutter:
-  uses-material-design: true
+    uses-material-design: true
