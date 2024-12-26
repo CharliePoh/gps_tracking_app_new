@@ -178,7 +178,7 @@ class _GPSPageState extends State<GPSPage> {
   Future<void> storeLocation(
       String userId, double latitude, double longitude) async {
     const String url =
-        "http://10.0.2.2/gps_tracking_app_new/web/php/insert_location.php"; // Update for the emulator
+        "http://172.20.10.3/gps_tracking_app_new/web/php/insert_location.php";
 
     try {
       final response = await http.post(
